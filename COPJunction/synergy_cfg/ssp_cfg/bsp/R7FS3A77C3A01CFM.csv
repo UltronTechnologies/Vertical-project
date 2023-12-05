@@ -1,0 +1,335 @@
+"Name","Pin","Function","Symbolic Name","Drive Capacity","IRQ","Mode","Output type","Pull up","Port Capabilities"
+"AVCC0","56","ANALOG0_AVCC0","","","","","","",""
+"AVSS0","57","ANALOG0_AVSS0","","","","","","",""
+"P000","64","ADC0_AN00","","","","Analog mode","","None","ACMPHS1: IVCMP
+ACMPHS1: IVREF
+ADC0: AN00
+CTSU0: TS21
+ICU0: IRQ06
+OPAMP0: AMP+"
+"P001","63","ADC0_AN01","","","","Analog mode","","None","ACMPHS1: IVCMP
+ACMPHS1: IVREF
+ADC0: AN01
+CTSU0: TS22
+ICU0: IRQ07
+OPAMP0: AMP-"
+"P002","62","ADC0_AN02","","","","Analog mode","","None","ACMPHS1: IVCMP
+ACMPHS1: IVREF
+ADC0: AN02
+ICU0: IRQ08
+OPAMP0: AMPO"
+"P003","61","ADC0_AN03","","","","Analog mode","","None","ACMPHS1: IVCMP
+ACMPHS1: IVREF
+ADC0: AN03
+OPAMP1: AMPO"
+"P004","60","ADC0_AN04","","","","Analog mode","","None","ACMPHS0: IVCMP
+ADC0: AN04
+ICU0: IRQ09
+OPAMP2: AMPO"
+"P010","59","ANALOG0_VREFH0","","","","Analog mode","","None","ADC0: AN10
+ANALOG0: VREFH0
+CTSU0: TS30
+ICU0: IRQ14
+OPAMP2: AMP-"
+"P011","58","ANALOG0_VREFL0","","","","Analog mode","","None","ADC0: AN11
+ANALOG0: VREFL0
+CTSU0: TS31
+ICU0: IRQ15
+OPAMP2: AMP+"
+"P012","55","ANALOG0_VREFH","","","","Analog mode","","None","ADC0: AN12
+ANALOG0: VREFH
+OPAMP1: AMP-"
+"P013","54","ANALOG0_VREFL","","","","Analog mode","","None","ADC0: AN13
+ANALOG0: VREFL
+OPAMP1: AMP+"
+"P014","53","ADC0_AN14","","","","Analog mode","","None","ACMPHS0: IVREF
+ACMPHS1: IVREF
+ADC0: AN14
+DAC0: DA"
+"P015","52","GPIO","PhoneFilter","Low","None","Output mode (Initial Low)","","","ACMPHS0: IVCMP
+ACMPHS1: IVCMP
+ADC0: AN15
+DAC1: DA
+ICU0: IRQ13"
+"P100","48","GPIO","SCL","Medium","None","Output mode (Initial High)","CMOS","","ACMPLP0: CMPIN
+ADC0: AN27
+AGT0: AGTIO
+BUS_ASYNCH0: D00
+GPT_POEG0: GTETRG
+ICU0: IRQ02
+IIC1: SCL
+KINT0: KRM0
+SCI0: RXD
+SCI0: SCL
+SCI1: SCK
+SLCDC0: VL1
+SPI0: MISO"
+"P101","47","GPIO","SDA","Low","None","Output mode (Initial High)","CMOS","","ACMPLP0: CMPREF
+ADC0: AN26
+AGT0: AGTEE
+BUS_ASYNCH0: D01
+GPT_POEG1: GTETRG
+ICU0: IRQ01
+IIC1: SDA
+KINT0: KRM1
+SCI0: SDA
+SCI0: TXD
+SCI1: CTS
+SLCDC0: VL2
+SPI0: MOSI"
+"P102","46","","","","","Disabled","","","ACMPLP1: CMPIN
+ADC0: ADTRG
+ADC0: AN25
+AGT0: AGTO
+BUS_ASYNCH0: D02
+GPT_OPS0: GTOWLO
+GPT2: GTIOCB
+KINT0: KRM2
+SCI0: SCK
+SLCDC0: VL3
+SPI0: RSPCK"
+"P103","45","","","","","Disabled","","","ACMPLP1: CMPREF
+ADC0: AN24
+BUS_ASYNCH0: D03
+GPT_OPS0: GTOWUP
+GPT2: GTIOCA
+KINT0: KRM3
+SCI0: CTS
+SLCDC0: VL4
+SPI0: SSL0"
+"P104","44","","","","","Disabled","","","BUS_ASYNCH0: D04
+GPT_POEG1: GTETRG
+ICU0: IRQ01
+KINT0: KRM4
+SLCDC0: COM0
+SPI0: SSL1"
+"P105","43","","","","","Disabled","","","BUS_ASYNCH0: D05
+GPT_POEG0: GTETRG
+ICU0: IRQ00
+KINT0: KRM5
+SLCDC0: COM1
+SPI0: SSL2"
+"P106","42","","","","","Disabled","","","BUS_ASYNCH0: D06
+GPT8: GTIOCB
+KINT0: KRM6
+SLCDC0: COM2
+SPI0: SSL3"
+"P107","41","","","","","Disabled","","","BUS_ASYNCH0: D07
+GPT8: GTIOCA
+KINT0: KRM7
+SLCDC0: COM3"
+"P108","33","DEBUG0_TMS","","Low","","Peripheral mode","CMOS","None","DEBUG0: SWDIO
+DEBUG0: TMS
+GPT0: GTIOCB
+SCI9: CTS
+SPI1: SSL0"
+"P109","34","DEBUG0_TDO","","Low","","Peripheral mode","CMOS","None","CGC0: CLKOUT
+DEBUG0: TDO
+DEBUG0: TRACESWO
+GPT_OPS0: GTOVUP
+GPT1: GTIOCA
+SCI9: SDA
+SCI9: TXD
+SPI1: MOSI"
+"P110","35","DEBUG0_TDI","","Low","None","Peripheral mode","CMOS","None","ACMP(0-1): VCOUT
+DEBUG0: TDI
+GPT_OPS0: GTOVLO
+GPT1: GTIOCB
+ICU0: IRQ03
+SCI2: CTS
+SCI9: RXD
+SCI9: SCL
+SPI1: MISO"
+"P111","36","GPIO","SelA","Low","None","Output mode (Initial Low)","CMOS","","BUS_ASYNCH0: A05
+GPT3: GTIOCA
+ICU0: IRQ04
+SCI2: SCK
+SCI9: SCK
+SLCDC0: CAPH
+SPI1: RSPCK"
+"P112","37","GPIO","SelB","Low","","Output mode (Initial Low)","CMOS","","BUS_ASYNCH0: A04
+GPT3: GTIOCB
+SCI2: SDA
+SCI2: TXD
+SLCDC0: CAPL
+SSI0: SSISCK"
+"P113","38","GPIO","SelC","Low","","Output mode (Initial Low)","CMOS","","BUS_ASYNCH0: A03
+SCI2: RXD
+SCI2: SCL
+SLCDC0: COM4
+SLCDC0: SEG00
+SSI0: SSIWS"
+"P200","27","","","","","Disabled","","","ICU0: NMI"
+"P201","26","GPIO","RearDoorOperator","Low","","Output mode (Initial Low)","CMOS","","SYSTEM0: MD"
+"P204","24","GPIO","ChargerOn","Low","","Output mode (Initial Low)","CMOS","","AGT1: AGTIO
+BUS_ASYNCH0: A18
+CAC0: CACREF
+CTSU0: TS00
+GPT_OPS0: GTIW
+GPT4: GTIOCB
+IIC0: SCL
+SCI4: SCK
+SCI9: SCK
+SDHI0: DAT4
+SLCDC0: SEG23
+SPI1: RSPCK
+SSI1: SSISCK
+USB_FS0: OVRCURB"
+"P205","23","GPIO","CabinLight","Low","None","Output mode (Initial Low)","CMOS","","AGT1: AGTO
+BUS_ASYNCH0: A16
+CGC0: CLKOUT
+CTSU0: TSCAP
+GPT_OPS0: GTIV
+GPT4: GTIOCA
+ICU0: IRQ01
+IIC1: SCL
+SCI4: SDA
+SCI4: TXD
+SCI9: CTS
+SDHI0: DAT3
+SPI1: SSL0
+SSI1: SSIWS
+USB_FS0: OVRCURA"
+"P206","22","GPIO","CourtesyLight","Low","None","Output mode (Initial Low)","CMOS","","BUS_ASYNCH0: WAIT
+CTSU0: TS01
+GPT_OPS0: GTIU
+ICU0: IRQ00
+IIC1: SDA
+SCI4: RXD
+SCI4: SCL
+SDHI0: DAT2
+SPI1: SSL1
+SSI1: SSIDATA
+USB_FS0: VBUSEN"
+"P212","10","CGC0_EXTAL","","","None","Peripheral mode","CMOS","None","AGT1: AGTEE
+CGC0: EXTAL
+GPT_POEG3: GTETRG
+ICU0: IRQ03
+SCI1: RXD
+SCI1: SCL"
+"P213","9","CGC0_XTAL","","","None","Peripheral mode","CMOS","None","CGC0: XTAL
+GPT_POEG2: GTETRG
+ICU0: IRQ02
+SCI1: SDA
+SCI1: TXD"
+"P214","7","","","","","Disabled","","","CGC0: XCOUT"
+"P215","6","","","","","Disabled","","","CGC0: XCIN"
+"P300","32","DEBUG0_TCK","","Low","","Peripheral mode","CMOS","None","DEBUG0: SWCLK
+DEBUG0: TCK
+GPT0: GTIOCA
+SPI1: SSL1"
+"P301","31","GPIO","Power","Low","None","Output mode (Initial Low)","CMOS","","BUS_ASYNCH0: A06
+GPT_OPS0: GTOULO
+GPT4: GTIOCB
+ICU0: IRQ06
+SCI2: RXD
+SCI2: SCL
+SLCDC0: COM5
+SLCDC0: SEG01
+SPI1: SSL2"
+"P302","30","","","","","Disabled","","","BUS_ASYNCH0: A07
+GPT_OPS0: GTOUUP
+GPT4: GTIOCA
+ICU0: IRQ05
+SCI2: SDA
+SCI2: TXD
+SLCDC0: COM6
+SLCDC0: SEG02
+SPI1: SSL3"
+"P303","29","GPIO","FrontDoorOperator","Low","","Output mode (Initial Low)","CMOS","","BUS_ASYNCH0: A08
+GPT7: GTIOCB
+SLCDC0: COM7
+SLCDC0: SEG03"
+"P304","28","GPIO","BackLight","Low","None","Output mode (Initial Low)","CMOS","","BUS_ASYNCH0: A09
+GPT7: GTIOCA
+ICU0: IRQ09
+SLCDC0: SEG17"
+"P400","1","","","","","Disabled","","","CTSU0: TS20
+GPT6: GTIOCA
+ICU0: IRQ00
+IIC0: SCL
+SCI4: SCK
+SSI_COMMON0: AUDIO_CLK"
+"P401","2","CAN0_CTX","","Low","None","Peripheral mode","CMOS","None","CAN0: CTX
+CTSU0: TS19
+GPT_POEG0: GTETRG
+GPT6: GTIOCB
+ICU0: IRQ05
+IIC0: SDA
+SCI4: CTS"
+"P402","3","CAN0_CRX","","Low","None","Peripheral mode","CMOS","None","AGT0: AGTIO
+AGT1: AGTIO
+CAN0: CRX
+CTSU0: TS18
+ICU0: IRQ04
+RTC0: RTCIC0"
+"P407","16","GPIO","YellowLED","Low","","Output mode (Initial Low)","CMOS","","ADC0: ADTRG
+CTSU0: TS03
+IIC0: SDA
+RTC0: RTCOUT
+SCI4: CTS
+SPI1: SSL3
+USB_FS0: VBUS"
+"P408","15","GPIO","GreenLED","Medium","None","Output mode (Initial Low)","CMOS","","CTSU0: TS04
+GPT_OPS0: GTOWLO
+ICU0: IRQ07
+SCI3: RXD
+SCI3: SCL
+USB_FS0: ID"
+"P409","14","GPIO","RearDoorLock","Low","None","Output mode (Initial Low)","CMOS","","CTSU0: TS05
+GPT_OPS0: GTOWUP
+ICU0: IRQ06
+SCI3: SDA
+SCI3: TXD
+USB_FS0: EXICEN"
+"P410","13","SCI0_RXD","","Low","None","Peripheral mode","CMOS","None","AGT1: AGTOB
+CTSU0: TS06
+GPT_OPS0: GTOVLO
+GPT9: GTIOCB
+ICU0: IRQ05
+SCI0: RXD
+SCI0: SCL
+SCI3: SCK
+SDHI0: DAT1
+SPI0: MISO"
+"P411","12","SCI0_TXD","","Low","None","Peripheral mode","CMOS","None","AGT1: AGTOA
+CTSU0: TS07
+GPT_OPS0: GTOVUP
+GPT9: GTIOCA
+ICU0: IRQ04
+SCI0: SDA
+SCI0: TXD
+SCI3: CTS
+SDHI0: DAT0
+SPI0: MOSI"
+"P500","49","GPIO","FrontDoorLock","Low","","Output mode (Initial Low)","CMOS","","ADC0: AN16
+AGT0: AGTOA
+GPT_OPS0: GTIU
+QSPI0: QSPCLK
+SLCDC0: SEG48
+USB_FS0: VBUSEN"
+"P501","50","","","","","Disabled","","","ADC0: AN17
+AGT0: AGTOB
+GPT_OPS0: GTIV
+ICU0: IRQ11
+QSPI0: QSSL
+SLCDC0: SEG49
+USB_FS0: OVRCURA"
+"P502","51","","","","","Disabled","","","ADC0: AN18
+GPT_OPS0: GTIW
+ICU0: IRQ12
+QSPI0: QIO0
+SLCDC0: SEG50
+USB_FS0: OVRCURB"
+"RES#","25","SYSTEM0_RES","","","","","","",""
+"USBDM","18","USBFS0_DM","","","","","","",""
+"USBDP","19","USBFS0_DP","","","","","","",""
+"VBATT","4","SYSTEM0_VBATT","","","","","","",""
+"VCC","11","SYSTEM0_VCC","","","","","","",""
+"VCC","39","SYSTEM0_VCC","","","","","","",""
+"VCCUSB","20","USBFS0_VCC","","","","","","",""
+"VCCUSBLDO","21","USBFS0_VCCLDO","","","","","","",""
+"VCL","5","SYSTEM0_VCL","","","","","","",""
+"VSS","8","SYSTEM0_VSS","","","","","","",""
+"VSS","40","SYSTEM0_VSS","","","","","","",""
+"VSSUSB","17","USBFS0_VSS","","","","","","",""

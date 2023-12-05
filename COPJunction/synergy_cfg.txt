@@ -1,0 +1,480 @@
+Synergy Configuration
+  Board "Custom User Board (Any Device)"
+  R7FS3A77C3A01CFM
+    part_number: R7FS3A77C3A01CFM
+    rom_size_bytes: 1048576
+    ram_size_bytes: 196608
+    data_flash_size_bytes: 16384
+    package_style: LQFP
+    package_pins: 64
+    
+  S3A7
+    series: 3
+    
+  S3A7 Family
+    OFS0 register settings: Select fields below
+         IWDT Start Mode: IWDT is Disabled
+         IWDT Timeout Period: 2048 cycles
+         IWDT Dedicated Clock Frequency Divisor: 128
+         IWDT Window End Position:  0% (no window end position)
+         IWDT Window Start Position: 100% (no window start position)
+         IWDT Reset Interrupt Request Select: Reset is enabled
+         IWDT Stop Control: Stop counting when in Sleep, Snooze mode, or Software Standby
+         WDT Start Mode Select: Stop WDT after a reset (register-start mode)
+         WDT Timeout Period: 16384 cycles
+         WDT Clock Frequency Division Ratio: 128
+         WDT Window End Position:  0% (no window end position)
+         WDT Window Start Position: 100% (no window start position)
+         WDT Reset Interrupt Request: Reset
+         WDT Stop Control: Stop counting when entering Sleep mode
+    OFS1 register settings: Select fields below
+         Voltage Detection 0 Circuit Start: Voltage monitor 0 reset is disabled after reset
+         Voltage Detection 0 Level: 1.90 V
+         HOCO OScillation Disable: HOCO oscillation is enabled after reset
+    MPU - Enable or disable PC Region 0: Disabled
+    MPU - PC0 Start: 0x000FFFFC
+    MPU - PC0 End: 0x000FFFFF
+    MPU - Enable or disable PC Region 1: Disabled
+    MPU - PC1 Start: 0x000FFFFC
+    MPU - PC1 End: 0x000FFFFF
+    MPU - Enable or disable Memory Region 0: Disabled
+    MPU - Memory Region 0 Start: 0x000FFFFC
+    MPU - Memory Region 0 End: 0x000FFFFF
+    
+  Synergy Common
+    Main stack size (bytes): 0x800
+    Process stack size (bytes): 0
+    Heap size (bytes) - A minimum of 4K (0x1000) is required if standard library functions are to be used.: 0x1000
+    MCU Vcc (mV): 3300
+    MCU Analog Power Supply AVCC0 (mV): 3300
+    Parameter checking: Enabled
+    Assert Failures: Return SSP_ERR_ASSERTION
+    Error Log: No Error Log
+    ID Code Mode: Unlocked (Ignore ID)
+    ID Code (32 Hex Characters): FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    
+  Clocks
+    XTAL 24000000Hz
+    HOCO 24MHz
+    PLL Div /4
+    PLL Mul x8
+    Clock Src: PLL
+    ICLK Div /1
+    PCLKA Div /1
+    PCLKB Div /2
+    PCLKC Div /1
+    PCLKD Div /1
+    BCLK Div /2
+    BCK/2
+    FCLK Div /2
+    
+  Pin Configurations
+    R7FS3A77C3A01CFM.pincfg -> g_bsp_pin_cfg
+      AVCC0 56 ANALOG0_AVCC0 - - - - - - - 
+      AVSS0 57 ANALOG0_AVSS0 - - - - - - - 
+      P000 64 ADC0_AN00 - - - "Analog mode" - None "ACMPHS1: IVCMP; ACMPHS1: IVREF; ADC0: AN00; CTSU0: TS21; ICU0: IRQ06; OPAMP0: AMP+" 
+      P001 63 ADC0_AN01 - - - "Analog mode" - None "ACMPHS1: IVCMP; ACMPHS1: IVREF; ADC0: AN01; CTSU0: TS22; ICU0: IRQ07; OPAMP0: AMP-" 
+      P002 62 ADC0_AN02 - - - "Analog mode" - None "ACMPHS1: IVCMP; ACMPHS1: IVREF; ADC0: AN02; ICU0: IRQ08; OPAMP0: AMPO" 
+      P003 61 ADC0_AN03 - - - "Analog mode" - None "ACMPHS1: IVCMP; ACMPHS1: IVREF; ADC0: AN03; OPAMP1: AMPO" 
+      P004 60 ADC0_AN04 - - - "Analog mode" - None "ACMPHS0: IVCMP; ADC0: AN04; ICU0: IRQ09; OPAMP2: AMPO" 
+      P010 59 ANALOG0_VREFH0 - - - "Analog mode" - None "ADC0: AN10; ANALOG0: VREFH0; CTSU0: TS30; ICU0: IRQ14; OPAMP2: AMP-" 
+      P011 58 ANALOG0_VREFL0 - - - "Analog mode" - None "ADC0: AN11; ANALOG0: VREFL0; CTSU0: TS31; ICU0: IRQ15; OPAMP2: AMP+" 
+      P012 55 ANALOG0_VREFH - - - "Analog mode" - None "ADC0: AN12; ANALOG0: VREFH; OPAMP1: AMP-" 
+      P013 54 ANALOG0_VREFL - - - "Analog mode" - None "ADC0: AN13; ANALOG0: VREFL; OPAMP1: AMP+" 
+      P014 53 ADC0_AN14 - - - "Analog mode" - None "ACMPHS0: IVREF; ACMPHS1: IVREF; ADC0: AN14; DAC0: DA" 
+      P015 52 GPIO PhoneFilter Low None "Output mode (Initial Low)" - - "ACMPHS0: IVCMP; ACMPHS1: IVCMP; ADC0: AN15; DAC1: DA; ICU0: IRQ13" 
+      P100 48 GPIO SCL Medium None "Output mode (Initial High)" CMOS - "ACMPLP0: CMPIN; ADC0: AN27; AGT0: AGTIO; BUS_ASYNCH0: D00; GPT_POEG0: GTETRG; ICU0: IRQ02; IIC1: SCL; KINT0: KRM0; SCI0: RXD; SCI0: SCL; SCI1: SCK; SLCDC0: VL1; SPI0: MISO" 
+      P101 47 GPIO SDA Low None "Output mode (Initial High)" CMOS - "ACMPLP0: CMPREF; ADC0: AN26; AGT0: AGTEE; BUS_ASYNCH0: D01; GPT_POEG1: GTETRG; ICU0: IRQ01; IIC1: SDA; KINT0: KRM1; SCI0: SDA; SCI0: TXD; SCI1: CTS; SLCDC0: VL2; SPI0: MOSI" 
+      P102 46 - - - - Disabled - - "ACMPLP1: CMPIN; ADC0: ADTRG; ADC0: AN25; AGT0: AGTO; BUS_ASYNCH0: D02; GPT_OPS0: GTOWLO; GPT2: GTIOCB; KINT0: KRM2; SCI0: SCK; SLCDC0: VL3; SPI0: RSPCK" 
+      P103 45 - - - - Disabled - - "ACMPLP1: CMPREF; ADC0: AN24; BUS_ASYNCH0: D03; GPT_OPS0: GTOWUP; GPT2: GTIOCA; KINT0: KRM3; SCI0: CTS; SLCDC0: VL4; SPI0: SSL0" 
+      P104 44 - - - - Disabled - - "BUS_ASYNCH0: D04; GPT_POEG1: GTETRG; ICU0: IRQ01; KINT0: KRM4; SLCDC0: COM0; SPI0: SSL1" 
+      P105 43 - - - - Disabled - - "BUS_ASYNCH0: D05; GPT_POEG0: GTETRG; ICU0: IRQ00; KINT0: KRM5; SLCDC0: COM1; SPI0: SSL2" 
+      P106 42 - - - - Disabled - - "BUS_ASYNCH0: D06; GPT8: GTIOCB; KINT0: KRM6; SLCDC0: COM2; SPI0: SSL3" 
+      P107 41 - - - - Disabled - - "BUS_ASYNCH0: D07; GPT8: GTIOCA; KINT0: KRM7; SLCDC0: COM3" 
+      P108 33 DEBUG0_TMS - Low - "Peripheral mode" CMOS None "DEBUG0: SWDIO; DEBUG0: TMS; GPT0: GTIOCB; SCI9: CTS; SPI1: SSL0" 
+      P109 34 DEBUG0_TDO - Low - "Peripheral mode" CMOS None "CGC0: CLKOUT; DEBUG0: TDO; DEBUG0: TRACESWO; GPT_OPS0: GTOVUP; GPT1: GTIOCA; SCI9: SDA; SCI9: TXD; SPI1: MOSI" 
+      P110 35 DEBUG0_TDI - Low None "Peripheral mode" CMOS None "ACMP(0-1): VCOUT; DEBUG0: TDI; GPT_OPS0: GTOVLO; GPT1: GTIOCB; ICU0: IRQ03; SCI2: CTS; SCI9: RXD; SCI9: SCL; SPI1: MISO" 
+      P111 36 GPIO SelA Low None "Output mode (Initial Low)" CMOS - "BUS_ASYNCH0: A05; GPT3: GTIOCA; ICU0: IRQ04; SCI2: SCK; SCI9: SCK; SLCDC0: CAPH; SPI1: RSPCK" 
+      P112 37 GPIO SelB Low - "Output mode (Initial Low)" CMOS - "BUS_ASYNCH0: A04; GPT3: GTIOCB; SCI2: SDA; SCI2: TXD; SLCDC0: CAPL; SSI0: SSISCK" 
+      P113 38 GPIO SelC Low - "Output mode (Initial Low)" CMOS - "BUS_ASYNCH0: A03; SCI2: RXD; SCI2: SCL; SLCDC0: COM4; SLCDC0: SEG00; SSI0: SSIWS" 
+      P200 27 - - - - Disabled - - "ICU0: NMI" 
+      P201 26 GPIO RearDoorOperator Low - "Output mode (Initial Low)" CMOS - "SYSTEM0: MD" 
+      P204 24 GPIO ChargerOn Low - "Output mode (Initial Low)" CMOS - "AGT1: AGTIO; BUS_ASYNCH0: A18; CAC0: CACREF; CTSU0: TS00; GPT_OPS0: GTIW; GPT4: GTIOCB; IIC0: SCL; SCI4: SCK; SCI9: SCK; SDHI0: DAT4; SLCDC0: SEG23; SPI1: RSPCK; SSI1: SSISCK; USB_FS0: OVRCURB" 
+      P205 23 GPIO CabinLight Low None "Output mode (Initial Low)" CMOS - "AGT1: AGTO; BUS_ASYNCH0: A16; CGC0: CLKOUT; CTSU0: TSCAP; GPT_OPS0: GTIV; GPT4: GTIOCA; ICU0: IRQ01; IIC1: SCL; SCI4: SDA; SCI4: TXD; SCI9: CTS; SDHI0: DAT3; SPI1: SSL0; SSI1: SSIWS; USB_FS0: OVRCURA" 
+      P206 22 GPIO CourtesyLight Low None "Output mode (Initial Low)" CMOS - "BUS_ASYNCH0: WAIT; CTSU0: TS01; GPT_OPS0: GTIU; ICU0: IRQ00; IIC1: SDA; SCI4: RXD; SCI4: SCL; SDHI0: DAT2; SPI1: SSL1; SSI1: SSIDATA; USB_FS0: VBUSEN" 
+      P212 10 CGC0_EXTAL - - None "Peripheral mode" CMOS None "AGT1: AGTEE; CGC0: EXTAL; GPT_POEG3: GTETRG; ICU0: IRQ03; SCI1: RXD; SCI1: SCL" 
+      P213 9 CGC0_XTAL - - None "Peripheral mode" CMOS None "CGC0: XTAL; GPT_POEG2: GTETRG; ICU0: IRQ02; SCI1: SDA; SCI1: TXD" 
+      P214 7 - - - - Disabled - - "CGC0: XCOUT" 
+      P215 6 - - - - Disabled - - "CGC0: XCIN" 
+      P300 32 DEBUG0_TCK - Low - "Peripheral mode" CMOS None "DEBUG0: SWCLK; DEBUG0: TCK; GPT0: GTIOCA; SPI1: SSL1" 
+      P301 31 GPIO Power Low None "Output mode (Initial Low)" CMOS - "BUS_ASYNCH0: A06; GPT_OPS0: GTOULO; GPT4: GTIOCB; ICU0: IRQ06; SCI2: RXD; SCI2: SCL; SLCDC0: COM5; SLCDC0: SEG01; SPI1: SSL2" 
+      P302 30 - - - - Disabled - - "BUS_ASYNCH0: A07; GPT_OPS0: GTOUUP; GPT4: GTIOCA; ICU0: IRQ05; SCI2: SDA; SCI2: TXD; SLCDC0: COM6; SLCDC0: SEG02; SPI1: SSL3" 
+      P303 29 GPIO FrontDoorOperator Low - "Output mode (Initial Low)" CMOS - "BUS_ASYNCH0: A08; GPT7: GTIOCB; SLCDC0: COM7; SLCDC0: SEG03" 
+      P304 28 GPIO BackLight Low None "Output mode (Initial Low)" CMOS - "BUS_ASYNCH0: A09; GPT7: GTIOCA; ICU0: IRQ09; SLCDC0: SEG17" 
+      P400 1 - - - - Disabled - - "CTSU0: TS20; GPT6: GTIOCA; ICU0: IRQ00; IIC0: SCL; SCI4: SCK; SSI_COMMON0: AUDIO_CLK" 
+      P401 2 CAN0_CTX - Low None "Peripheral mode" CMOS None "CAN0: CTX; CTSU0: TS19; GPT_POEG0: GTETRG; GPT6: GTIOCB; ICU0: IRQ05; IIC0: SDA; SCI4: CTS" 
+      P402 3 CAN0_CRX - Low None "Peripheral mode" CMOS None "AGT0: AGTIO; AGT1: AGTIO; CAN0: CRX; CTSU0: TS18; ICU0: IRQ04; RTC0: RTCIC0" 
+      P407 16 GPIO YellowLED Low - "Output mode (Initial Low)" CMOS - "ADC0: ADTRG; CTSU0: TS03; IIC0: SDA; RTC0: RTCOUT; SCI4: CTS; SPI1: SSL3; USB_FS0: VBUS" 
+      P408 15 GPIO GreenLED Medium None "Output mode (Initial Low)" CMOS - "CTSU0: TS04; GPT_OPS0: GTOWLO; ICU0: IRQ07; SCI3: RXD; SCI3: SCL; USB_FS0: ID" 
+      P409 14 GPIO RearDoorLock Low None "Output mode (Initial Low)" CMOS - "CTSU0: TS05; GPT_OPS0: GTOWUP; ICU0: IRQ06; SCI3: SDA; SCI3: TXD; USB_FS0: EXICEN" 
+      P410 13 SCI0_RXD - Low None "Peripheral mode" CMOS None "AGT1: AGTOB; CTSU0: TS06; GPT_OPS0: GTOVLO; GPT9: GTIOCB; ICU0: IRQ05; SCI0: RXD; SCI0: SCL; SCI3: SCK; SDHI0: DAT1; SPI0: MISO" 
+      P411 12 SCI0_TXD - Low None "Peripheral mode" CMOS None "AGT1: AGTOA; CTSU0: TS07; GPT_OPS0: GTOVUP; GPT9: GTIOCA; ICU0: IRQ04; SCI0: SDA; SCI0: TXD; SCI3: CTS; SDHI0: DAT0; SPI0: MOSI" 
+      P500 49 GPIO FrontDoorLock Low - "Output mode (Initial Low)" CMOS - "ADC0: AN16; AGT0: AGTOA; GPT_OPS0: GTIU; QSPI0: QSPCLK; SLCDC0: SEG48; USB_FS0: VBUSEN" 
+      P501 50 - - - - Disabled - - "ADC0: AN17; AGT0: AGTOB; GPT_OPS0: GTIV; ICU0: IRQ11; QSPI0: QSSL; SLCDC0: SEG49; USB_FS0: OVRCURA" 
+      P502 51 - - - - Disabled - - "ADC0: AN18; GPT_OPS0: GTIW; ICU0: IRQ12; QSPI0: QIO0; SLCDC0: SEG50; USB_FS0: OVRCURB" 
+      RES# 25 SYSTEM0_RES - - - - - - - 
+      USBDM 18 USBFS0_DM - - - - - - - 
+      USBDP 19 USBFS0_DP - - - - - - - 
+      VBATT 4 SYSTEM0_VBATT - - - - - - - 
+      VCC 11 SYSTEM0_VCC - - - - - - - 
+      VCC 39 SYSTEM0_VCC - - - - - - - 
+      VCCUSB 20 USBFS0_VCC - - - - - - - 
+      VCCUSBLDO 21 USBFS0_VCCLDO - - - - - - - 
+      VCL 5 SYSTEM0_VCL - - - - - - - 
+      VSS 8 SYSTEM0_VSS - - - - - - - 
+      VSS 40 SYSTEM0_VSS - - - - - - - 
+      VSSUSB 17 USBFS0_VSS - - - - - - - 
+      
+  Module "ELC Driver on r_elc"
+    Parameter Checking: Default (BSP)
+    
+  Module "FMI Driver on r_fmi"
+    Parameter Checking: Default (BSP)
+    SSP MCU Information Symbol Name: g_fmi_data
+    Part Number Mask: 0xFE00
+    
+  Module "CGC Driver on r_cgc"
+    Parameter Checking: Default (BSP)
+    Main Oscillator Wait Time: 2048 us (16384 cycles)
+    Main Oscillator Clock Source: Crystal or Resonator
+    Subclock Drive: Normal Mode
+    Configure Subclock Drive On Reset: Enabled
+    Low Voltage Mode: Disable
+    
+  Module "I/O Port Driver on r_ioport"
+    Parameter Checking: Default (BSP)
+    
+  Module "CAN Driver on r_can"
+    Parameter Checking Enable: Default (BSP)
+    
+  Module "ADC Driver on r_adc"
+    Parameter Checking: Enabled
+    
+  Module "I2C Master Driver on r_sci_i2c"
+    Parameter Checking: Default (BSP)
+    
+  Module "Transfer Driver on r_dtc"
+    Parameter Checking: Default (BSP)
+    Software Start: Disabled
+    Linker section to keep DTC vector table: .ssp_dtc_vector_table
+    
+  HAL
+    Instance "g_elc ELC Driver on r_elc"
+      Name [Fixed]: g_elc
+      
+    Instance "g_fmi FMI Driver on r_fmi"
+      Name: g_fmi
+      
+    Instance "g_cgc CGC Driver on r_cgc"
+      Name [Fixed]: g_cgc
+      
+    Instance "g_ioport I/O Port Driver on r_ioport"
+      Name [Fixed]: g_ioport
+      
+  Thread "Status LED"
+    Symbol: status_led
+    Name: Status LED
+    Stack size (bytes): 1024
+    Priority: 5
+    Auto start: Enabled
+    Time slicing interval (ticks): 1
+    
+  Thread "Can Thread"
+    Symbol: can_thread
+    Name: Can Thread
+    Stack size (bytes): 1024
+    Priority: 1
+    Auto start: Enabled
+    Time slicing interval (ticks): 1
+    
+    Instance "g_can0 CAN Driver on r_can"
+      Name: g_can0
+      Channel: 0
+      Baud Rate Prescaler: 2
+      Time Segment 1: 15 Time Quanta
+      Time Segment 2: 8 Time Quanta
+      Synchronization Jump Width: 1 Time Quanta
+      Clock Source: PCLKB
+      Callback: CanCallback
+      Overwrite/Overrrun Mode: Overwrite Mode
+      Standard or Extended ID Mode: Standard ID Mode
+      Number of Mailboxes: 32 Mailboxes
+      Mailbox 0 ID: 0x7DF
+      Mailbox 1 ID: 0x7DF
+      Mailbox 2 ID: 2
+      Mailbox 3 ID: 3
+      Mailbox 4 ID: 4
+      Mailbox 5 ID: 5
+      Mailbox 6 ID: 6
+      Mailbox 7 ID: 7
+      Mailbox 8 ID: 8
+      Mailbox 9 ID: 9
+      Mailbox 10 ID: 10
+      Mailbox 11 ID: 11
+      Mailbox 12 ID: 12
+      Mailbox 13 ID: 13
+      Mailbox 14 ID: 14
+      Mailbox 15 ID: 15
+      Mailbox 16 ID: 16
+      Mailbox 17 ID: 17
+      Mailbox 18 ID: 18
+      Mailbox 19 ID: 19
+      Mailbox 20 ID: 20
+      Mailbox 21 ID: 21
+      Mailbox 22 ID: 22
+      Mailbox 23 ID: 23
+      Mailbox 24 ID: 24
+      Mailbox 25 ID: 25
+      Mailbox 26 ID: 26
+      Mailbox 27 ID: 27
+      Mailbox 28 ID: 28
+      Mailbox 29 ID: 29
+      Mailbox 30 ID: 30
+      Mailbox 31 ID: 31
+      Mailbox 0 Type: Receive Mailbox
+      Mailbox 1 Type: Transmit Mailbox
+      Mailbox 2 Type: Receive Mailbox
+      Mailbox 3 Type: Receive Mailbox
+      Mailbox 4 Type: Receive Mailbox
+      Mailbox 5 Type: Receive Mailbox
+      Mailbox 6 Type: Receive Mailbox
+      Mailbox 7 Type: Receive Mailbox
+      Mailbox 8 Type: Receive Mailbox
+      Mailbox 9 Type: Receive Mailbox
+      Mailbox 10 Type: Receive Mailbox
+      Mailbox 11 Type: Receive Mailbox
+      Mailbox 12 Type: Receive Mailbox
+      Mailbox 13 Type: Receive Mailbox
+      Mailbox 14 Type: Receive Mailbox
+      Mailbox 15 Type: Receive Mailbox
+      Mailbox 16 Type: Receive Mailbox
+      Mailbox 17 Type: Receive Mailbox
+      Mailbox 18 Type: Receive Mailbox
+      Mailbox 19 Type: Receive Mailbox
+      Mailbox 20 Type: Receive Mailbox
+      Mailbox 21 Type: Receive Mailbox
+      Mailbox 22 Type: Receive Mailbox
+      Mailbox 23 Type: Receive Mailbox
+      Mailbox 24 Type: Receive Mailbox
+      Mailbox 25 Type: Receive Mailbox
+      Mailbox 26 Type: Receive Mailbox
+      Mailbox 27 Type: Receive Mailbox
+      Mailbox 28 Type: Receive Mailbox
+      Mailbox 29 Type: Receive Mailbox
+      Mailbox 30 Type: Receive Mailbox
+      Mailbox 31 Type: Receive Mailbox
+      Mailbox 0 Frame Type: Data Mailbox
+      Mailbox 1 Frame Type: Data Mailbox
+      Mailbox 2 Frame Type: Data Mailbox
+      Mailbox 3 Frame Type: Data Mailbox
+      Mailbox 4 Frame Type: Data Mailbox
+      Mailbox 5 Frame Type: Data Mailbox
+      Mailbox 6 Frame Type: Data Mailbox
+      Mailbox 7 Frame Type: Data Mailbox
+      Mailbox 8 Frame Type: Data Mailbox
+      Mailbox 9 Frame Type: Data Mailbox
+      Mailbox 10 Frame Type: Data Mailbox
+      Mailbox 11 Frame Type: Data Mailbox
+      Mailbox 12 Frame Type: Data Mailbox
+      Mailbox 13 Frame Type: Data Mailbox
+      Mailbox 14 Frame Type: Data Mailbox
+      Mailbox 15 Frame Type: Data Mailbox
+      Mailbox 16 Frame Type: Data Mailbox
+      Mailbox 17 Frame Type: Data Mailbox
+      Mailbox 18 Frame Type: Data Mailbox
+      Mailbox 19 Frame Type: Data Mailbox
+      Mailbox 20 Frame Type: Data Mailbox
+      Mailbox 21 Frame Type: Data Mailbox
+      Mailbox 22 Frame Type: Data Mailbox
+      Mailbox 23 Frame Type: Data Mailbox
+      Mailbox 24 Frame Type: Data Mailbox
+      Mailbox 25 Frame Type: Data Mailbox
+      Mailbox 26 Frame Type: Data Mailbox
+      Mailbox 27 Frame Type: Data Mailbox
+      Mailbox 28 Frame Type: Data Mailbox
+      Mailbox 29 Frame Type: Data Mailbox
+      Mailbox 30 Frame Type: Data Mailbox
+      Mailbox 31 Frame Type: Data Mailbox
+      Mailbox 0-3 Group Mask: 0x1FFFFFFF
+      Mailbox 4-7 Group Mask: 0x1FFFFFFF
+      Mailbox 8-11 Group Mask: 0x1FFFFFFF
+      Mailbox 12-15 Group Mask: 0x1FFFFFFF
+      Mailbox 16-19 Group Mask: 0x1FFFFFFF
+      Mailbox 20-23 Group Mask: 0x1FFFFFFF
+      Mailbox 24-27 Group Mask: 0x1FFFFFFF
+      Mailbox 28-31 Group Mask: 0x1FFFFFFF
+      Error Interrupt Priority: Priority 12
+      Receive Mailbox Interrupt Priority: Priority 12
+      Transmit Mailbox Interrupt Priority: Priority 12
+      
+  Thread "LCD Thread"
+    Symbol: lcd_thread
+    Name: LCD Thread
+    Stack size (bytes): 1024
+    Priority: 2
+    Auto start: Enabled
+    Time slicing interval (ticks): 1
+    
+  Thread "ADC Thread"
+    Symbol: adc_thread
+    Name: ADC Thread
+    Stack size (bytes): 2048
+    Priority: 2
+    Auto start: Enabled
+    Time slicing interval (ticks): 1
+    
+    Instance "g_adc0 ADC Driver on r_adc"
+      Name: g_adc0
+      Unit: 0
+      Resolution: 12-Bit
+      Alignment: Right
+      Clear after read: On
+      Mode: Single Scan
+      Internal Calibration During Open(): Enabled
+      Channel Scan Mask (channel availability varies by MCU): Select channels below
+          Channel 0: Use in Normal/Group A
+          Channel 1: Use in Normal/Group A
+          Channel 2: Use in Normal/Group A
+          Channel 3: Use in Normal/Group A
+          Channel 4: Unused
+          Channel 5: Unused
+          Channel 6: Unused
+          Channel 7: Unused
+          Channel 8: Unused
+          Channel 9: Unused
+          Channel 10: Unused
+          Channel 11: Unused
+          Channel 12: Unused
+          Channel 13: Unused
+          Channel 14 (S3 series Only): Unused
+          Channel 15 (S3A7/S3A3 Only): Unused
+          Channel 16: Unused
+          Channel 17: Unused
+          Channel 18: Unused
+          Channel 19: Unused
+          Channel 20: Unused
+          Channel 21 (Unit 0 Only): Unused
+          Channel 22: Unused
+          Channel 23: Unused
+          Channel 24: Unused
+          Channel 25 (S3 series only): Unused
+          Channel 26 (S3A7/S3A3 Only): Unused
+          Channel 27 (S3A7/S3A3 Only): Unused
+          Temperature Sensor: Unused
+          Voltage Sensor: Unused
+      Normal/Group A Trigger: Software
+      Group B Trigger (Valid only in Group Scan Mode): ELC Event (The only valid trigger for either group in Group Scan Mode)
+      Group Priority (Valid only in Group Scan Mode): Group A cannot interrupt Group B
+      Add/Average Count: Disabled
+      Addition/Averaging Mask (channel availability varies by MCU): Select channels to perform addition/averaging below
+          Channel 0: Disabled
+          Channel 1: Disabled
+          Channel 2: Disabled
+          Channel 3: Disabled
+          Channel 4: Disabled
+          Channel 5: Disabled
+          Channel 6: Disabled
+          Channel 7: Disabled
+          Channel 8: Disabled
+          Channel 9: Disabled
+          Channel 10: Disabled
+          Channel 11: Disabled
+          Channel 12: Disabled
+          Channel 13: Disabled
+          Channel 14: Disabled
+          Channel 15: Disabled
+          Channel 16: Disabled
+          Channel 17: Disabled
+          Channel 18: Disabled
+          Channel 19: Disabled
+          Channel 20: Disabled
+          Channel 21: Disabled
+          Channel 22: Disabled
+          Channel 23: Disabled
+          Channel 24: Disabled
+          Channel 25: Disabled
+          Channel 26: Disabled
+          Channel 27: Disabled
+          Temperature Sensor: Disabled
+          Voltage Sensor: Disabled
+      Sample and Hold Mask (Available only on selected MCUs): Select channels for which individual sample and hold circuit is to be enabled
+          Channel 0: Disabled
+          Channel 1: Disabled
+          Channel 2: Disabled
+      Sample Hold States (Applies only to the 3 channels selected above): 24
+      Callback: NULL
+      Scan End Interrupt Priority: Disabled
+      Scan End Group B Interrupt Priority: Disabled
+      Voltage reference(Only for S1JA): External VREFH0
+      Over current protection(Only for S1JA): Enabled
+      Programmable Gain Amplifier: Select PGA Channel from 'Channel Scan Mask,Gain from below options'
+      PGA 0: Not Supported
+      PGA 1: Not Supported
+      PGA 2: Not Supported
+      
+  Thread "Drive Thread"
+    Symbol: drv_thread
+    Name: Drive Thread
+    Stack size (bytes): 2048
+    Priority: 1
+    Auto start: Enabled
+    Time slicing interval (ticks): 1
+    
+    Instance "g_i2c0 I2C Master Driver on r_sci_i2c"
+      Name: g_i2c0
+      Channel: 0
+      Rate: Standard
+      Slave Address : 0x00
+      Address Mode: 7-Bit
+      SDA Output Delay (nano seconds): 300
+      Bit Rate Modulation Enable: Enable
+      Callback: NULL
+      Receive Interrupt Priority: Priority 12
+      Transmit Interrupt Priority: Priority 12
+      Transmit End Interrupt Priority: Priority 12
+      
+      Instance "g_transfer0 Transfer Driver on r_dtc SCI0 TXI"
+        Name: g_transfer0
+        Mode: Normal
+        Transfer Size: 1 Byte
+        Destination Address Mode: Fixed
+        Source Address Mode: Incremented
+        Repeat Area (Unused in Normal Mode): Source
+        Interrupt Frequency: After all transfers have completed
+        Destination Pointer: NULL
+        Source Pointer: NULL
+        Number of Transfers: 0
+        Number of Blocks (Valid only in Block Mode): 0
+        Activation Source (Must enable IRQ): SCI0 TXI
+        Auto Enable: False
+        Callback (Only valid with Software start): NULL
+        ELC Software Event Interrupt Priority: Disabled
+        
+      Instance "g_transfer1 Transfer Driver on r_dtc SCI0 RXI"
+        Name: g_transfer1
+        Mode: Normal
+        Transfer Size: 1 Byte
+        Destination Address Mode: Incremented
+        Source Address Mode: Fixed
+        Repeat Area (Unused in Normal Mode): Destination
+        Interrupt Frequency: After all transfers have completed
+        Destination Pointer: NULL
+        Source Pointer: NULL
+        Number of Transfers: 0
+        Number of Blocks (Valid only in Block Mode): 0
+        Activation Source (Must enable IRQ): SCI0 RXI
+        Auto Enable: False
+        Callback (Only valid with Software start): NULL
+        ELC Software Event Interrupt Priority: Disabled
+        
+  Messaging
